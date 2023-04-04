@@ -28,7 +28,8 @@ $hover: #2c4d35;
     width: $width;
     height: 45px;
     border-radius: 5px;
-    background-color: $bgColor;    
+    background-color: $bgColor;
+    cursor: pointer;    
 
     &:hover {
         background-color: $bgColorHover;
