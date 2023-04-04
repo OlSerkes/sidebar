@@ -1,0 +1,65 @@
+$default: #4d4949;
+$disabledColor: #4d4c49;
+$btn-text: #ffffff;
+$border-color: #dcdcdc;
+$bg-color: #f8f8f8;
+$progress: #4ff07b;
+$hover: #2c4d35;
+
+%font-main {
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 400;
+}
+
+@mixin fonts($fontSize, $lineHeight) {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+}
+
+@mixin button($colorText,
+    $borderColor,
+    $width,
+    $bgColor,
+    $bgColorHover,
+    $bgColorDisabled) {
+    color: $colorText;
+    box-sizing: border-box;
+    border: 1px solid $borderColor;
+    width: $width;
+    height: 45px;
+    border-radius: 5px;
+    background-color: $bgColor;    
+
+    &:hover {
+        background-color: $bgColorHover;
+        color: $btn-text;
+        transition: 0.5s;
+    }
+
+    &:disabled {
+        background-color: $bgColorDisabled;
+        opacity: 0.4;
+    }
+}
+
+@keyframes growProgressbar {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+
+}
+
+@keyframes lowProgressbar {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 0;
+    }
+
+}

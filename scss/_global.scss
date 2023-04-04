@@ -1,0 +1,38 @@
+html,
+body {
+    height: 100%;
+    margin: auto;
+}
+
+body {
+    @extend %font-main;
+    @include fonts(15px, 25px);
+    letter-spacing: 0;
+    color: $default;
+    cursor: default;
+}
+
+h1 {
+    @include fonts(28px, 37px);
+    font-weight: 600;
+}
+
+h2 {
+    @include fonts(24px, 39px);
+    font-weight: 600;
+}
+
+button {
+    transition-duration: 0.4s;
+}
+
+.container-fluid {
+    width: 1440px;
+}
+
+.container {
+    max-width: 1160px;
+    margin-right: 140px;
+    margin-left: 140px;
+}
+
