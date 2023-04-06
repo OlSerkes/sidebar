@@ -13,12 +13,12 @@ body {
 }
 
 h1 {
-    @include fonts(28px, 37px);
+    @include fonts(26px, 35px);
     font-weight: 600;
 }
 
 h2 {
-    @include fonts(24px, 39px);
+    @include fonts(22px, 30px);
     font-weight: 600;
 }
 
