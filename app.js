@@ -29,7 +29,7 @@ function endProgress(seconds) {
   return new Promise((resolve) => {
     let count = seconds;
     const interval = setInterval(() => {
-      loaderFill.style.animation = `lowProgressbar 5s ease-in both`;
+      loaderFill.style.animation = `lowProgressbar 3s ease-in both`;
       count--;
 
       if (count < 0) {
@@ -88,7 +88,7 @@ function hideAllElem(box) {
 }
 
 function showElement() {
-  endProgress(3).then(() => {
+  endProgress(1).then(() => {
     setTimeout(() => {
       allBtn.disabled = false;
       oneBtn.disabled = false;
