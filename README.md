@@ -7,9 +7,11 @@ When all three blocks are hidden, the preloader drops to 0 and the blocks become
 Clicking on button "All", buttons become deasabled, the preloader is launched, filled up to 100% and starting close the elements in the all blocks.
 First are closed all images, than headers, texts and wrappers.
 When all three blocks are hidden, the preloader drops to 0 and the blocks become visible.
-![](./img//readme.jpg)
+
 
 ![](./img//readme.jpg)
+
+![](./img//readme-2.jpg)
 
 Technologies used:
 
